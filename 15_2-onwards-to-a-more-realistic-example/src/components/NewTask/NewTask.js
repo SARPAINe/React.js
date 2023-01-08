@@ -22,7 +22,7 @@ const NewTask = (props) => {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: taskText,
+                body: { text: taskText },
             },
             createTask.bind(null, taskText)
         );
