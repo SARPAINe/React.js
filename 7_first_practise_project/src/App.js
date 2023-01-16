@@ -21,7 +21,7 @@ function App() {
     return (
         <React.Fragment>
             <AddUser onAddUser={addUserHandler}></AddUser>;
-            <UsersList users={usersList}></UsersList>
+            {usersList.length > 0 && <UsersList users={usersList}></UsersList>}
         </React.Fragment>
     );
 }

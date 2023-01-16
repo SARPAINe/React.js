@@ -1,12 +1,25 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useLocation, useRoutes } from "react-router-dom";
 import React from "react";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 import BookLayout from "./BookLayout";
 import BookRoutes from "./BookRoutes";
+import Header from "./Header";
 
 function App() {
+    const location = useLocation();
+    console.log(location);
+    // let element = useRoutes([
+    //     {
+    //         path: "/",
+    //         element: <Header></Header>,
+    //     },
+    //     {
+    //         path: "*",
+    //         element: <NotFound />,
+    //     },
+    // ]);
     return (
         <React.Fragment>
             {/* <Routes location="/books">
@@ -15,13 +28,16 @@ function App() {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/" state="hi">
+                            Home
+                        </Link>
                     </li>
                     <li>
                         <Link to="/books">Books</Link>
                     </li>
                 </ul>
             </nav>
+            {/* {element} */}
             <Routes>
                 <Route path="/" element={<Home></Home>}></Route>
 
