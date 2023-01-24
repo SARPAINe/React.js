@@ -6,14 +6,18 @@ const ErrorPage = () => {
     const error = useRouteError();
     // console.log(error);
     let title, message;
-    if (error.status === 500) {
-        title = "An error occured!";
-        // message = JSON.parse(error.data).message;
-        message = error.data.message;
-    }
     if (error.status === 404) {
         title = "Not found!";
         message = "Could not find resource or page";
+    }
+    if (error.status === 500 || error.status) {
+        title = "An error occured!";
+        // message = JSON.parse(error.data).message;
+        console.log(error.data);
+        error.data.message
+            ? (message = error.data.message)
+            : (message = "Something went wrong!");
+        // message = error.data.message;
     }
     // console.log(JSON.parse(error.data).message);
     return (
