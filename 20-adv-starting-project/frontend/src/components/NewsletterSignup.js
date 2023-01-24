@@ -8,10 +8,11 @@ function NewsletterSignup() {
     const { data, state } = fetcher;
 
     useEffect(() => {
-        if (state === "idle" && data.message) {
-            window.alert(data.message);
-        }
-    }, []);
+        // if (state === "idle" && data.message) {
+        //     window.alert(data.message);
+        // }
+        if (state === "idle" && data) window.alert(data.message);
+    }, [state, data]);
     //if we use fetche.Form it doesn't redirect to the page it submits to
 
     // this useFetcher hook, is basically the tool you should use
@@ -33,8 +34,15 @@ function NewsletterSignup() {
                 type="email"
                 placeholder="Sign up for newsletter..."
                 aria-label="Sign up for newsletter"
+                name="email"
             />
-            <button>Sign up</button>
+            <button
+                onClick={() => {
+                    console.log(data.message);
+                }}
+            >
+                Sign up
+            </button>
         </fetcher.Form>
     );
 }
