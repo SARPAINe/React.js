@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigation } from "react-router-dom";
 import classes from "./EventsNavigation.module.css";
 
 function EventsNavigation() {
+    const navigation = useNavigation();
     return (
         <header className={classes.header}>
             <nav>
