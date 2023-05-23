@@ -1,12 +1,1 @@
-{
-  "events": [
-    {
-      "title": "A new event",
-      "image": "https://cdn.muenchen-p.de/fl_progressive,q_65/.imaging/stk/responsive/teaser300/dms/va-2016/muenchner-christkindlmarkt/christkindlmarkt-marienplat-logo-hp/document/christkindlmarkt-marienplat-logo-hp.jpg",
-      "date": "2022-10-01",
-      "description": "Some awesome event!",
-      "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
-    }
-  ],
-  "users": []
-}
+{"events":[{"title":"an elephant","image":"https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg","date":"2023-01-26","description":"an elephant and blue bg","id":"cb7f6e4f-eb3e-40fe-b97b-6ba4b5b586c5"}],"users":[{"email":"test1@gmail.com","password":"$2a$12$mF2s0QRlUzu3irygk3rDneANp9Oj7ZHY.LU7k7NYsrkLTl.gUxUrG","id":"055993dc-ad3e-4748-9bff-ab5dfbc4605d"},{"email":"test2@gmail.com","password":"$2a$12$3hC0ZnjuqyFve9hSQl7xleHMkYFbjYur7AeNCKk9IJwcbp5/K4eF6","id":"ef576bf7-f6f8-4d9a-9631-be3fc0dc2623"},{"email":"test3@gmail.com","password":"$2a$12$bC0GInLEDGIIXT7rFApysev5.vwihFo66fM8pF1QPRri/oiwF2Oya","id":"08559642-5285-4f80-a85d-2d817b6ede6f"}]}
