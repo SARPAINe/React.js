@@ -1,3 +1,4 @@
+"use strict";
 import { Routes, Route } from "react-router-dom";
 import BookList from "./pages/BookList";
 import Book from "./pages/Book";
@@ -6,6 +7,7 @@ import NewBook from "./pages/NewBook";
 import React from "react";
 import BookLayout from "./BookLayout";
 const BookRoutes = () => {
+    x = 3;
     return (
         <React.Fragment>
             {/* <BookLayout></BookLayout> */}

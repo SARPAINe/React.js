@@ -1,6 +1,6 @@
 {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 70,
+    "editor.wordWrapColumn": 60,
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
