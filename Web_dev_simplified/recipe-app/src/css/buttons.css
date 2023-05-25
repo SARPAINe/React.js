@@ -22,3 +22,8 @@
 .btn--primary:hover {
     background-color: hsl(200, 100%, 35%);
 }
+
+.btn--danger:hover {
+    color: white;
+    background-color: hsl(0, 100%, 35%);
+}
