@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <!-- <script>
+            // run this function when the document is loaded
+            window.onload = () => {
+                // create a couple of elements in an otherwise empty HTML page
+                const heading = document.createElement("h1");
+                const headingText = document.createTextNode("Big Head!");
+                heading.appendChild(headingText);
+                document.body.appendChild(heading);
+                console.log(typeof heading.ownerDocument);
+                console.log(document.body);
+                console.log(document.children);
+            };
+        </script> -->
+    </head>
+    <body>
+        <h1>first h1</h1>
+        <h1>second</h1>
+        <script>
+            const a = document.querySelectorAll("h1");
+            console.log(a[0]);
+        </script>
+    </body>
+</html>

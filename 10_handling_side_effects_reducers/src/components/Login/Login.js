@@ -16,6 +16,7 @@ const emailReducer = (state, action) => {
 };
 
 const passwordReducer = (state, action) => {
+    console.log("password reducer being called");
     if (action.type === "USER_INPUT") {
         return { value: action.val, isValid: action.val.trim().length > 6 };
     }
@@ -41,13 +42,13 @@ const Login = (props) => {
         isValid: null,
     });
 
-    useEffect(() => {
-        console.log("EFFECT RUNNING");
+    // useEffect(() => {
+    //     console.log("EFFECT RUNNING");
 
-        return () => {
-            console.log("EFFECT CLEANUP");
-        };
-    }, []);
+    //     return () => {
+    //         console.log("EFFECT CLEANUP");
+    //     };
+    // }, []);
 
     //variation of object de structuring
     const { isValid: emailIsValid } = emailState;

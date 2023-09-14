@@ -66,6 +66,7 @@ const Cart = (props) => {
                     amount={item.amount}
                     price={item.price}
                     //bind pre configures a funciton for future execution
+                    //common practise when you need to pass both data and event handlers as props to child components
                     onRemove={cartItemRemoveHandler.bind(null, item.id)}
                     onAdd={cartItemAddHandler.bind(null, item)}
                 />

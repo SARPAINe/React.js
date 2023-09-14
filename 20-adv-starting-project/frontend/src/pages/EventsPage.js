@@ -6,7 +6,6 @@ import { json, useLoaderData } from "react-router-dom";
 function EventsPage() {
     //react router handles promise here
     const data = useLoaderData();
-
     if (data.isError) {
         return <p>{data.message}</p>;
     }
