@@ -13,6 +13,7 @@ function NewsletterSignup() {
         // }
         if (state === "idle" && data) window.alert(data.message);
     }, [state, data]);
+
     //if we use fetche.Form it doesn't redirect to the page it submits to
 
     // this useFetcher hook, is basically the tool you should use
